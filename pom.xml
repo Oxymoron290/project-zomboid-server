@@ -187,6 +187,12 @@
               </goals>
               <configuration>
                 <finalName>pz-agent</finalName>
+                <relocations>
+                  <relocation>
+                    <pattern>net.bytebuddy</pattern>
+                    <shadedPattern>dev.oxymoron.vendored.net.bytebuddy</shadedPattern>
+                  </relocation>
+                </relocations>
               </configuration>
             </execution>
           </executions>
