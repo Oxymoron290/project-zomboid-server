@@ -1,6 +1,6 @@
-package com.github.garyttierney.zomboid.server;
+package dev.oxymoron.zomboidServerApi;
 
-import com.github.garyttierney.zomboid.server.patches.PatchLoadMarker;
+import dev.oxymoron.zomboidServerApi.patches.PatchLoadMarker;
 import net.bytebuddy.agent.ByteBuddyAgent;
 import net.bytebuddy.agent.builder.AgentBuilder;
 
@@ -23,7 +23,7 @@ public class ZomboidServerPatcher {
                 .transform(
                         new AgentBuilder.Transformer.ForAdvice()
                                 .include(PatchLoadMarker.class.getClassLoader())
-                                .advice(named("main"), "com.github.garyttierney.zomboid.server.patches.GameServerStartupAdvice")
+                                .advice(named("main"), "dev.oxymoron.zomboidServerApi.patches.GameServerStartupAdvice")
                 )
                 .installOn(inst);
     }

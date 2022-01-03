@@ -1,4 +1,4 @@
-package com.github.garyttierney.zomboid.server.api
+package dev.oxymoron.zomboidServerApi.api
 
 data class PlayerInfo(val current: Int, val max: Int)
 data class WorldInfo(val daysElapsed: Float, val weather: String)

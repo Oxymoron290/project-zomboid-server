@@ -1,8 +1,8 @@
-package com.github.garyttierney.zomboid.server.patches;
+package dev.oxymoron.zomboidServerApi;
 
-import com.github.garyttierney.zomboid.server.ZomboidServerStatus;
-import com.github.garyttierney.zomboid.server.api.DefaultZomboidApiServerAdapter;
-import com.github.garyttierney.zomboid.server.api.ZomboidApiServer;
+import dev.oxymoron.zomboidServerApi.ZomboidServerStatus;
+import dev.oxymoron.zomboidServerApi.api.DefaultZomboidApiServerAdapter;
+import dev.oxymoron.zomboidServerApi.api.ZomboidApiServer;
 import net.bytebuddy.asm.Advice;
 
 import javax.management.MBeanServer;

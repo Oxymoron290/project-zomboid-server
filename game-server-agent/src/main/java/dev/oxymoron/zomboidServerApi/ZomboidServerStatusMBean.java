@@ -1,4 +1,4 @@
-package com.github.garyttierney.zomboid.server;
+package dev.oxymoron.zomboidServerApi;
 
 public interface ZomboidServerStatusMBean {
     Integer getCurrentPlayers();

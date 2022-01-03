@@ -22,7 +22,6 @@
     "java/uncommons-maths-1.2.3.jar"
   ],
   "vmArgs": [
-    "-javaagent:/opt/project-zomboid/jmx_prometheus_javaagent.jar=9099:prometheus.yaml",
     "-javaagent:/opt/project-zomboid/pz-agent.jar",
     "-Djava.awt.headless=true",
     "-Dzomboid.steam=1",

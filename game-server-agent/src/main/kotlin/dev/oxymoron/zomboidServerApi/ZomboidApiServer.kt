@@ -1,4 +1,4 @@
-package com.github.garyttierney.zomboid.server.api
+package dev.oxymoron.zomboidServerApi.api
 
 import io.javalin.Javalin
 import io.javalin.apibuilder.ApiBuilder.get

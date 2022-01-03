@@ -1,4 +1,4 @@
-package com.github.garyttierney.zomboid.server.api
+package dev.oxymoron.zomboidServerApi.api
 
 import zombie.characters.IsoPlayer
 import zombie.iso.IsoWorld

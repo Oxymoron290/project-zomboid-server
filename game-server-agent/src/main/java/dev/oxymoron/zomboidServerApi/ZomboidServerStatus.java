@@ -1,4 +1,4 @@
-package com.github.garyttierney.zomboid.server;
+package dev.oxymoron.zomboidServerApi;
 
 import zombie.MovingObjectUpdateScheduler;
 import zombie.iso.IsoWorld;
