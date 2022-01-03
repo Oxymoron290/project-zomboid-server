@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>dev.oxymoron.zomboid-server-api</groupId>
-  <artifactId>zomboid-server-api</artifactId>
+  <groupId>dev.oxymoron.zomboidServerApi</groupId>
+  <artifactId>zomboidServerApi</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>zomboid-server-api</name>
-  <url>http://zomboid-server-api.oxymoron.dev</url>
+  <name>zomboidServerApi</name>
+  <url>http://zomboidServerApi.oxymoron.dev</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,6 +33,11 @@
         <groupId>io.javalin</groupId>
         <artifactId>javalin</artifactId>
         <version>4.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>zombie</groupId>
+      <artifactId>zombie</artifactId>
+      <version>1.0.0</version>
     </dependency>
   </dependencies>
 
@@ -64,13 +69,9 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
               </manifest>
               <manifestEntries>
                 <Premain-Class>dev.oxymoron.zomboidServerApi.ZomboidServerPatcher</Premain-Class>
-                <Can-Redefine-Classes>false</Can-Redefine-Classes>
-                <Can-Retransform-Classes>true</Can-Retransform-Classes>
               </manifestEntries>
             </archive>
           </configuration>
@@ -108,20 +109,5 @@
         </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.4</version>
-          <executions>
-            <execution>
-              <phase>package</phase>
-              <goals>
-                <goal>shade</goal>
-              </goals>
-            </execution>
-          </executions>
-      </plugin>
-    </plugins>
   </build>
 </project>
