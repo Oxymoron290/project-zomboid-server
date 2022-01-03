@@ -1,4 +1,4 @@
-package dev.oxymoron.zomboidServerApi;
+package dev.oxymoron.zomboidServerApi.patches;
 
 import dev.oxymoron.zomboidServerApi.ZomboidServerStatus;
 import dev.oxymoron.zomboidServerApi.api.DefaultZomboidApiServerAdapter;
